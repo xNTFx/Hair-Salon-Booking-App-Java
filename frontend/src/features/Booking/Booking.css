@@ -1,0 +1,67 @@
+.booking {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.booking__service {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.booking__service-name {
+  font-size: large;
+  font-weight: bold;
+}
+
+.booking__service-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.booking__service-price {
+  font-weight: bold;
+}
+
+.booking__service-duration {
+  font-size: small;
+}
+
+.booking__employee {
+  display: flex;
+  justify-content: space-between;
+}
+
+.booking__change-btn {
+  font-weight: bold;
+  border: 1px solid gray;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+}
+
+.booking__change-btn:hover {
+  background-color: #d3d3d3;
+}
+
+.booking__btn {
+  background-color: #088f8f;
+  border-radius: 0.5rem;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  width: 100%;
+}
+
+.booking__btn:hover {
+  background-color: rgba(8, 143, 143, 0.7);
+}
+
+.booking__btn-container {
+  position: sticky;
+  bottom: 0;
+  background-color: white;
+  z-index: 100;
+  padding-bottom: 0.5rem;
+}

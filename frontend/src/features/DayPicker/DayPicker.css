@@ -1,0 +1,137 @@
+.daypicker {
+  display: flex;
+  flex-direction: column;
+}
+
+.daypicker__month {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.daypicker__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.daypicker__container-button {
+  background-color: transparent;
+  border-color: transparent;
+  margin: 0.1rem;
+  padding: 0 0.6rem;
+  font-size: x-large;
+  font-weight: bolder;
+  border-radius: 512px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.date-component__button {
+  margin: 0.5rem;
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 1rem;
+  padding: 0.1rem;
+  font-weight: bold;
+  font-size: large;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  user-select: none;
+  font-size: 1.5rem;
+}
+
+.date-component__button:hover {
+  background-color: rgba(173, 255, 47, 0.4);
+}
+
+.date-element {
+  margin: 1rem;
+}
+
+.date-element__date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.daypicker__container-button--disabled:hover {
+  background-color: transparent;
+  cursor: auto;
+}
+
+.date-element__heading {
+  margin: 0;
+}
+
+.date-element__heading--h1 {
+  font-size: 1.5rem;
+}
+
+.reservation-date-element__heading--h2 {
+  font-size: 1.5rem;
+}
+
+.dates__button {
+  display: flex;
+  align-self: center;
+}
+
+.date-component--selected {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 97%;
+  border-radius: 1rem;
+  cursor: pointer;
+  border: 1px solid lightslategray;
+  user-select: none;
+}
+
+.date-component--selected:hover {
+  background-color: rgba(173, 255, 47, 0.3);
+}
+
+.date-component__date--selected {
+  background-color: greenyellow;
+}
+
+.date-component__date--selected:hover {
+  background-color: rgb(173, 255, 47);
+}
+
+.date-component--selected {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.dates-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100px;
+  width: 100%;
+  gap: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 480px) {
+  .dates-container {
+    flex-direction: column;
+    height: 270px;
+  }
+  .daypicker__date-text {
+    margin: 0;
+  }
+}

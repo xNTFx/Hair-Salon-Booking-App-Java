@@ -1,0 +1,128 @@
+.navbar-account {
+  position: static;
+}
+
+@media (min-width: 768px) {
+  .navbar-account {
+    position: relative;
+  }
+}
+
+.navbar-account__button-container {
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  padding: 0.5rem;
+  width: 5rem;
+}
+
+.navbar-account__button-container--open {
+  border-color: #d1d5db;
+}
+
+.navbar-account__button {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-account__avatar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-account__avatar {
+  font-size: 2rem;
+}
+
+.navbar-account__email {
+  font-size: 1rem;
+  font-weight: bold;
+  max-width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.navbar-account__dropdown {
+  position: absolute;
+  top: auto;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.5rem;
+  border-top-right-radius: 0;
+  border: 1px solid #d1d5db;
+  background-color: white;
+  padding: 0.5rem;
+  font-weight: bold;
+  z-index: 100;
+}
+
+.navbar-account__infobox-container {
+  width: 100vw;
+  border-radius: 0.5rem;
+  background-color: white;
+  padding: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .navbar-account__infobox-container {
+    width: 20rem;
+  }
+}
+
+.navbar-account__infobox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar-account__logout-button,
+.navbar-account__login-button,
+.navbar-account__register-button,
+.navbar-account__details-button {
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .navbar-account__logout-button,
+  .navbar-account__login-button,
+  .navbar-account__details-button,
+  .navbar-account__register-button {
+    width: 80%;
+  }
+}
+
+.navbar-account__logout-button {
+  background-color: #ef4444;
+}
+
+.navbar-account__details-button {
+  background-color: #3b82f6;
+}
+
+.navbar-account__login-button {
+  background-color: #3b82f6;
+}
+
+.navbar-account__register-button {
+  background-color: #10b981;
+}
+
+.navbar-account__login-button:hover,
+.navbar-account__register-button:hover,
+.navbar-account__logout-button:hover,
+.navbar-account__details-button:hover {
+  text-decoration: underline;
+}
+
+.navbar-account__divider {
+  width: 100%;
+}

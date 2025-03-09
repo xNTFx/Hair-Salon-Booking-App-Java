@@ -1,0 +1,80 @@
+/* TimePicker.css */
+.timepicker {
+  display: flex;
+  flex-direction: column;
+}
+
+.timepicker__date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.timepicker__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.timepicker__container-button {
+  background-color: transparent;
+  border-color: transparent;
+  margin: 0.1rem;
+  padding: 0 0.6rem;
+  font-size: x-large;
+  font-weight: bolder;
+  border-radius: 512px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.time-component__button {
+  margin: 0.5rem;
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 1rem;
+  padding: 0.1rem;
+  font-weight: bold;
+  font-size: large;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  user-select: none;
+}
+
+.time-component__button:hover {
+  background-color: rgba(173, 255, 47, 0.4);
+}
+
+.time-element {
+  margin: 1rem;
+}
+
+.time-element__time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timepicker__container-button--disabled:hover {
+  background-color: transparent;
+  cursor: auto;
+}
+
+.time-element__heading {
+  margin: 0;
+}
+
+.time-element__heading--h1 {
+  font-size: 20px;
+}
+
+.time-component__time--selected {
+  background-color: greenyellow;
+}
+
+.time-component__time--selected:hover {
+  background-color: rgb(173, 255, 47);
+}

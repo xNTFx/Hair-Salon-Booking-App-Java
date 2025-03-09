@@ -1,0 +1,53 @@
+# build directories and compilation artifacts
+target/
+build/
+!**/src/main/**/target/
+!**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# maven
+.mvn/
+!.mvn/wrapper/maven-wrapper.jar
+
+# gradle
+.gradle/
+build/
+
+# logs
+*.log
+logs/
+hs_err_pid*
+
+# application configuration
+HELP.md
+application.properties
+application.yml
+application-*.properties
+application-*.yml
+.env
+
+# spring tool suite (sts)
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+# intellij idea
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# netbeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# visual studio code
+.vscode/

@@ -1,0 +1,64 @@
+.Notification {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  z-index: 10002;
+  width: 100vw;
+  padding: 0.3rem;
+}
+
+.Notification-content {
+  padding: 0.3rem;
+  min-width: 30%;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+}
+
+.Progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5px;
+  filter: brightness(50%);
+  width: 100%;
+  animation-name: progress;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes progress {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .Notification-content {
+    width: 100%;
+  }
+}
+
+/* Animation classes */
+.slide-in {
+  animation: slideIn 0.3s ease forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
