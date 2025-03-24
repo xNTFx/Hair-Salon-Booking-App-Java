@@ -13,3 +13,7 @@
 ## Link to Website
 
 [https://www.hairsalonbookingapp-java.pawelsobon.pl/](https://www.hairsalonbookingapp-java.pawelsobon.pl/)
+
+## Example Image
+
+![hbs](https://github.com/user-attachments/assets/c4403f19-24e1-4598-be45-a47903736ec9)
